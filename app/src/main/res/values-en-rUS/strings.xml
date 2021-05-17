@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Practicoo</string>
+    <string name="suma">Add</string>
+    <string name="resta">Subtract</string>
+    <string name="IncrementarZoom">Zoom++</string>
+    <string name="DecrementarZoom">Zomm--</string>
+    <string name="ocultar">Hide</string>
+    <string name="reiniciar">Restart</string>
+    <string name="TexView">0</string>
+</resources>
