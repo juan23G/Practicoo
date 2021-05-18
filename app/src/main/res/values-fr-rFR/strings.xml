@@ -8,4 +8,13 @@
     <string name="IncrementarZoom">Zoom++</string>
     <string name="resta">Soustraire</string>
     <string name="suma">Ajouter</string>
+    <string name="TextViewConversor">dsd</string>
+    <string name="EditTexrNumber">fdf</string>
+    <string name="TextViewMoneda">gd</string>
+    <string name="RadioButtonDolar">GF</string>
+    <string name="RadioButtonEuro">GF</string>
+    <string name="RadioButtonReal">GD</string>
+    <string name="EditTextNumberResultado">hg</string>
+    <string name="buttonConvertir">gf</string>
+    <string name="buttonReiniciarResultado">fg</string>
 </resources>

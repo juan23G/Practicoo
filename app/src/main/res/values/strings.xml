@@ -7,4 +7,16 @@
     <string name="ocultar">Ocultar</string>
     <string name="reiniciar">Reiniciar</string>
     <string name="TexView">0</string>
+
+    <string name="TextViewConversor">Conversor Monedas</string>
+    <string name="EditTexrNumber">Ingrese Monto en Pesos</string>
+    <string name="TextViewMoneda">Seleccione una Moneda</string>
+    <string name="RadioButtonDolar">DOLAR (USA)</string>
+    <string name="RadioButtonEuro">EURO</string>
+    <string name="RadioButtonReal">REAL (BRASIL)</string>
+    <string name="EditTextNumberResultado">Resultado</string>
+    <string name="buttonConvertir">Convertir</string>
+    <string name="buttonReiniciarResultado">Reiniciar</string>
+
+
 </resources>
