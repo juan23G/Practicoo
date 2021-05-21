@@ -6,9 +6,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.text.DecimalFormat;
 
 public class segunda extends AppCompatActivity {
 
@@ -16,9 +19,9 @@ public class segunda extends AppCompatActivity {
     private Button buttonConvertir, buttonReiniciarResultado;
     private RadioButton radioButtonDolar, radioButtonEuro, radioButtonReal;
     private RadioGroup radioGroup;
-    private double dolar= 94.06;
-    private double euro= 114.41;
-    private double real= 17.84;
+    private final double dolar= 94.06;
+    private final double euro= 114.41;
+    private final double real= 17.84;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,21 +40,55 @@ public class segunda extends AppCompatActivity {
         buttonConvertir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dolar(view);
+                convertir();
+            }
+        });
+
+        buttonReiniciarResultado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                reiniciar();
             }
         });
     }
 
-    public void dolar(View view){
+    public void convertir(){
 
-        double monto = Double.parseDouble(editTextNumberMonto.getText().toString());
+            double entradaMonto=0, salidaMoneda=0;
+
+            if(editTextNumberMonto.getText().toString().isEmpty())
+            {
+                Toast.makeText(this, "no se ingreso nada", Toast.LENGTH_LONG).show();
+                return;
+            }
+
+            entradaMonto= Double.parseDouble(editTextNumberMonto.getText().toString());
+
+            if(radioButtonDolar.isChecked())
+            {
+                salidaMoneda = entradaMonto*dolar;
+            }
+            if(radioButtonEuro.isChecked())
+            {
+                salidaMoneda = entradaMonto*euro;
+            }
+            if(radioButtonReal.isChecked())
+            {
+                salidaMoneda = entradaMonto*real;
+            }
+            DecimalFormat df = new DecimalFormat("###.##");
+            editTextNumberResultado.setText(String.valueOf(df.format(salidaMoneda)));
+
+
+
+        /*double monto = Double.parseDouble(editTextNumberMonto.getText().toString());
         double montoDolar = 0.0;
         if(radioButtonDolar.isChecked()==true){
 
             montoDolar = monto * dolar;
             editTextNumberResultado.setText(montoDolar);
 
-        }
+        }*/
 
         /*String monto= editTextNumberMonto.getText().toString();
         dolar = Double.parseDouble(monto);
@@ -61,5 +98,10 @@ public class segunda extends AppCompatActivity {
             String resultado = String.valueOf(suma);
             editTextNumberResultado.setText(resultado);
         }*/
+    }
+
+    public void reiniciar(){
+        editTextNumberResultado.setText("0");
+        editTextNumberMonto.setText("0");
     }
 }

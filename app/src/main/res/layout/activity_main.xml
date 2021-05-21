@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/buttonSuma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
         android:layout_marginTop="24dp"
         android:text="@string/suma"
         app:layout_constraintEnd_toStartOf="@+id/buttonResta"
@@ -19,8 +19,8 @@
 
     <Button
         android:id="@+id/buttonResta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
         android:layout_marginTop="24dp"
         android:text="@string/resta"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,8 +29,8 @@
 
     <Button
         android:id="@+id/buttonIncrementarZoom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
         android:layout_marginTop="24dp"
         android:text="@string/IncrementarZoom"
         app:layout_constraintEnd_toStartOf="@+id/buttonDecrementarZoom"
@@ -39,8 +39,8 @@
 
     <Button
         android:id="@+id/buttonDecrementarZoom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
         android:layout_marginTop="24dp"
         android:text="@string/DecrementarZoom"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,8 +49,8 @@
 
     <Button
         android:id="@+id/buttonOcultar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
         android:layout_marginTop="24dp"
         android:text="@string/ocultar"
         app:layout_constraintEnd_toStartOf="@+id/buttonReiniciar"
@@ -59,8 +59,8 @@
 
     <Button
         android:id="@+id/buttonReiniciar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
         android:layout_marginTop="24dp"
         android:text="@string/reiniciar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +84,7 @@
         android:layout_marginTop="46dp"
         android:text="@string/TexView"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
